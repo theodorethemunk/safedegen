@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Safe Degens</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!--boostrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link href="https://fonts.cdnfonts.com/css/space-ranger" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="main_bg_img bg_main">
+
+    <!-- ====== Main backgroun ====== -->
+    <div class="">
+        <div class="main_bg_gradient">
+            <!-- ====== Header ====== -->
+            <header class="header_section">
+                <nav class="navbar navbar-expand-lg navbar-light padding_t_b">
+                    <div class="container-fluid">
+                        <a href="" class="cretal_al_logo order-1 order-lg-1">
+                            <img src="image/logo.png" alt="logo" class="img-fluid">
+                        </a>
+
+                        <button class="navbar-toggler order-3 order-lg-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">How to Buy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#utilities">Utilities</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#roadmap">Roadmap</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://t.me/safedegensportal">Join Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="tp-header-left d-flex align-items-center justify-content-end order-2 order-lg-3">
+
+                            <div class="tp-header-login tp-login-primary">
+                                <a href="https://bscscan.com/token/0x6482aC16643ebaFbd86DBeCEDAF6b49cA0a36E5E" class="txt_wheight me-md-3 me-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_54_107)">
+                                            <path
+                                                d="M6.94297 16.7366C6.77299 16.6625 6.58557 16.6756 6.40688 16.6451C3.53899 16.1613 1.4382 14.6271 0.104506 12.0381C-0.157003 11.5282 0.0870718 10.9747 0.623166 10.8352C0.993637 10.7393 1.36847 10.918 1.55588 11.2885C1.85662 11.8856 2.21401 12.4391 2.67601 12.9273C4.11431 14.444 5.88386 15.185 7.96721 15.0847C10.9266 14.9409 13.3761 12.9186 14.1432 10.0507C15.0803 6.5726 12.9708 2.8766 9.49268 1.89594C6.33278 1.00681 3.07263 2.44511 1.58639 5.38709C1.37283 5.8055 1.01107 6.00163 0.623166 5.90139C0.104506 5.77063 -0.148286 5.21711 0.0914303 4.7246C0.658033 3.56088 1.45128 2.57586 2.47116 1.77826C3.75692 0.77581 5.21701 0.196132 6.84708 0.0348679C6.88195 0.0305094 6.92554 0.0523018 6.94297 0C7.39189 0 7.83646 0 8.28538 0C8.2941 0.0348679 8.32461 0.0305094 8.35076 0.0305094C8.65585 0.0523018 8.95659 0.100245 9.25732 0.156905C12.7005 0.815037 15.4246 3.6742 15.9127 7.13048C15.9389 7.32661 15.9345 7.5271 16.0043 7.71452C16.0043 8.15037 16.0043 8.58622 16.0043 9.02206C15.9607 9.0395 15.9738 9.07437 15.9738 9.10488C15.9389 9.37074 15.9171 9.63661 15.8691 9.89812C15.2241 13.4023 12.4042 16.1133 8.8607 16.6494C8.66021 16.6799 8.45536 16.6712 8.25923 16.7366C7.81467 16.7366 7.37882 16.7366 6.94297 16.7366Z"
+                                                fill="white" />
+                                            <path
+                                                d="M9.23976 9.1877C7.71429 9.1877 6.18882 9.1877 4.66335 9.1877C4.24494 9.1877 3.90933 8.91747 3.83524 8.54264C3.73064 8.01091 4.10983 7.56198 4.66771 7.56198C6.13216 7.55763 7.59661 7.56198 9.06542 7.56198C9.12644 7.56198 9.1831 7.56198 9.24848 7.56198C9.24848 7.49661 9.19618 7.47481 9.16567 7.44431C8.81699 7.09127 8.46395 6.74259 8.11527 6.38955C7.75788 6.03216 7.7448 5.53093 8.08041 5.19533C8.41165 4.86844 8.91288 4.87716 9.26155 5.22584C9.9284 5.88833 10.5996 6.55517 11.2621 7.22638C11.9289 7.90631 11.9246 8.86081 11.2577 9.53202C10.5909 10.2032 9.91969 10.8788 9.24412 11.5413C8.7952 11.9815 8.07605 11.8159 7.87992 11.2318C7.77095 10.9049 7.85812 10.6216 8.09348 10.3776C8.44216 10.0245 8.7952 9.67585 9.14388 9.32717C9.17874 9.2923 9.23105 9.26615 9.27463 9.23564C9.26591 9.21385 9.25284 9.20078 9.23976 9.1877Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_54_107">
+                                                <rect width="16" height="16.7409" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg> Contract
+                                </a>
+                            </div>
+                            <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0x6482aC16643ebaFbd86DBeCEDAF6b49cA0a36E5E" class="main_btn ms-2" target="_blank">
+                                <button type="button" class="btn bg_gradient border-0">View Chart</button>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- ======End Header ====== -->
+            <!-- Hero section -->
+            <section class="welcome_section margin_t_100">
+                <div>
+                    <div class="welcome_content">
+                        <div class="sub_title margin_top_50">
+                            <h5 class="mb-3">Welcome to Safe Degens.</h5>
+                            <span class="gradient_line  justify-content-center">
+                            </span>
+                        </div>
+                        <div class="main_title mb-3">
+                            <center> <img src="logo.png" class="img-fluid" style="width: 300px;"></center>
+                            <h1 class="fw_800 text-center">Revolutionizing the Crypto Ecosystem</h1>
+                        </div>
+                        <div class="title_text mb-4">
+                            <p class="fw_400 text-center">Introducing Safe Degens, Safe Degens is an exceptional investment opportunity that provides a secure platform for individuals looking to invest their hard-earned money</p>
+                        </div>
+                        <div class="sign_up_form">
+                            <form action="#" class="">
+                                <div class="align-items-center position-relative d-flex justify-content-center">
+                                    <div class="position-relative">
+
+                                        <a href="https://t.me/safedegensportal" class="main_btn" target="_blank">
+                                            <button type="button" class="btn bg_gradient border-0">Community</button>
+                                        </a>
+                                        <a href="https://safedegens.com/swap/" class="main_btn">
+                                            <button type="button" class="btn bg_gradient border-0">Buy Safe Degens</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="creating_sample margin_top_70 d-flex justify-content-center margin_bottom_120">
+                            <img src="about1.webp" alt="creat_smple" class="img-fluid" style="width: 500px;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======Brand logo section ====== -->
+            <section class="brand_logo_section">
+                <div class="container">
+                    <div class="title_text">
+                        <p class="fw_400">Built on Binance Blockchain, Launch at Pancakeswap</p>
+                    </div>
+                    <div class="bran_logo margin_top_50 margin_bottom_120">
+                        <div class="row justify-content-between">
+                            <div class="col-md-2 col-sm-6 p-4 p-md-0">
+                                <img src="dextools.png" alt="brand-logo-img" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-6 p-4 p-md-0">
+                                <img src="pckkk.png" alt="brand-logo-img" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-6 p-4 p-md-0">
+                                <img src="bscscan.png" alt="brand-logo-img" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-6 p-4 p-md-0">
+                                <img src="cg.png" alt="brand-logo-img" class="img-fluid">
+                            </div>
+                            <div class="col-md-2 col-6 p-4 p-md-0">
+                                <img src="cmcc.png" alt="brand-logo-img" class="img-fluid">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======End Brand logo section ====== -->
+            <!-- ====== Writing Work Section ====== -->
+            <section class="Writing_work_section margin_bottom_120" id="about">
+                <div class="container">
+                    <div class="work_containt">
+                        <div class="sub_title">
+                            <h5 class="mb-3">How to buy?</h5>
+                            <span class="gradient_line  justify-content-center">
+                            </span>
+                        </div>
+                        <div class="main_title">
+                            <h2 class="fw_800 text-center">How to buy Safe Degens</h2>
+                        </div>
+                        <div class="title_text mb-5">
+                            <p class="fw_400">FOllow step bellow to get Safe Degens Token</p>
+                        </div>
+                    </div>
+                    <div class="writer_wroks">
+                        <div class="row">
+                            <div class="col-md-4 text-center ex_l_border border_color_right">
+                                <div class="number_gradient">
+                                    <h1 class="">01.</h1>
+                                    <h4 class="fw_700 lh_normal">Create a wallet</h4>
+                                    <div class="title_text">
+                                        <p class="fw_400">download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center ex_l_border border_color_right">
+                                <div class="number_gradient">
+                                    <h1 class="">02.</h1>
+                                    <h4 class="fw_700 lh_normal">Get some BNB</h4>
+                                    <div class="title_text">
+                                        <p class="fw_400">have BNB in your wallet to switch to Safe Degens. If you don’t have any BNB, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center ex_l_border ex_r_border">
+                                <div class="number_gradient">
+                                    <h1 class="">03.</h1>
+                                    <h4 class="fw_700 lh_normal">Go to Pancakeswap</h4>
+                                    <div class="title_text">
+                                        <p class="fw_400">Connect to Pancakeswap. Go to Pancakeswap.finance in google chrome or on the browser inside your Metamask app. Connect your wallet. Paste the Safe Degens token address into Pancakeswap, select Safe Degens, approve
+                                            then confirm.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======End Writing Work Section ====== -->
+            <!-- ====== AI blog editor section ====== -->
+            <section class="blog_editor_section margin_bottom_120 position-relative">
+                <div class="container">
+                    <div class="blog_contant bg_gray padding border_radius">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="sub_title text-start">
+                                    <h5 class="mb-3">Quick Buy Safe Degens</h5>
+                                    <span class="gradient_line  justify-content-center">
+                                    </span>
+                                </div>
+                                <div class="main_title mb-3">
+                                    <h2 class="fw_800 text-start">Buy Safe Degens
+                                    </h2>
+                                </div>
+                                <div class="title_text">
+                                    <p class="fw_400 text-start">You can quickly buy Safe Degens tokens in the table beside</p>
+                                    <p class="fw_400 text-start" style="font-size: 12px;">0x6482aC16643ebaFbd86DBeCEDAF6b49cA0a36E5E</p>
+                                </div>
+                                <a href="#" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">Smart Contract</button>
+                                </a>
+                                
+                                <a href="https://testnet.bscscan.com/token/0x5239e2dE2685fe6B28882225aFA08B11FbF7D53B" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">TESTNET</button>
+                                </a>
+
+                                <a href="https://t.me/SafeBuy_Bot" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">Buy Bot</button>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 blog_img position-relative">
+                                <div class="edit_blog_img">
+
+                                    <!-- 1. Place this script tag on the <head> of your page: -->
+
+                                    <script type="text/javascript" src="https://widgets.rubic.exchange/iframe/bundle.min.js"></script>
+
+
+                                    <!-- 2. Place this div tag at the location where the Rubic Widget will be:  -->
+
+                                    <div id="rubic-widget-root"></div>
+
+
+                                    <!-- 3. Place this script tag at the bottom of <body>: -->
+
+                                    <script defer type="text/javascript">
+                                        // describe widget configuration and saving to a global variable for future use
+                                        var configuration = {
+                                                from: 'BNB', <!-- 1. Place this script tag on the <head> of your page: -->
+
+                                                <
+                                                script type = "text/javascript"
+                                                src = "https://widgets.rubic.exchange/iframe/bundle.min.js" >
+                                    </script>
+
+
+                                    <!-- 2. Place this div tag at the location where the Rubic Widget will be:  -->
+
+                                    <div id="rubic-widget-root"></div>
+
+
+                                    <!-- 3. Place this script tag at the bottom of <body>: -->
+
+                                    <script defer type="text/javascript">
+                                        // describe widget configuration and saving to a global variable for future use
+                                        var configuration = {
+                                            from: 'BNB',
+                                            to: '0x6482aC16643ebaFbd86DBeCEDAF6b49cA0a36E5E',
+                                            fromChain: 'BSC',
+                                            toChain: 'BSC',
+                                            amount: 1,
+                                            iframe: 'flex',
+                                            hideSelectionFrom: false,
+                                            hideSelectionTo: true,
+                                            tokenSearch: true,
+                                            rubicLink: true,
+                                            theme: 'dark',
+                                            background: '#28372e',
+                                            injectTokens: {
+                                                'bsc': [
+                                                    '0x6482aC16643ebaFbd86DBeCEDAF6b49cA0a36E5E'
+                                                ]
+                                            },
+                                            slippagePercent: {
+                                                instantTrades: 2,
+                                                crossChain: 5
+                                            },
+                                            fee: 0.075,
+                                            feeTarget: '0xB7D0e84b85Df0ca4811f0564e8D83f51011666a8'
+                                        }
+
+                                        // prevent accidental changes to the object, for example, when re-creating a widget for another theme
+                                        Object.freeze(configuration);
+
+                                        // create widget
+                                        rubicWidget.init(configuration);
+                                    </script>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="blog_ellips position-absolute">
+                            <img src="image/Ellipse-1.png" class="img-fluid" alt="Ellipse-1">
+                        </div>
+                        <div class="blog_ellips-3 position-absolute">
+                            <img src="image/Ellipse-2.png" class="img-fluid" alt="Ellipse-1">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ======End AI blog editor section ====== -->
+            <!-- ====== Help Us section ====== -->
+            <section class="help_us_section margin_bottom_120" id="utilities">
+                <div class="container">
+                    <div class="help_us_contant">
+                        <div class="sub_title">
+                            <h5 class="mb-3">Utilities</h5>
+                            <span class="gradient_line  justify-content-center">
+                            </span>
+                        </div>
+                        <div class="main_title">
+                            <h2 class="fw_800 text-center">Key Features</h2>
+                        </div>
+                        <div class="title_text mb-4">
+                            <p class="fw_400">With a focus on security, scalability, and user-friendliness, Safe Degens is set to become the go-to choice for investors, traders, and blockchain enthusiasts alike.</p>
+                        </div>
+                    </div>
+                    <div class="word_help_box">
+                        <div class="row">
+                            <div class="col-md-4 col-12 col-sm-6 text-center border_bottom_color ex_r_border border_color_right">
+                                <div class="help_word_box my-5 ">
+                                    <img src="bloxkchain.png" class="img-fluid" style="width: 100px;">
+                                    <h4 class="fw_700 lh_normal mb-3">Dex Swap</h4>
+                                    <div class="title_text">
+                                        <p class="fw_400">The process of trading one cryptocurrency for another using a smart contract-based exchange protocol is known as “swapping” on a DEX (decentralized exchange). Users can exchange cryptocurrencies directly with one
+                                            another utilizing a decentralized, trustless platform thanks to DEXs.</p>
+                                            <a href="https://safedegens.com/swap" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">SWAP</button>
+                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 col-sm-6 text-center border_bottom_color border_color_right">
+                                <div class="help_word_box my-5">
+                                    <img src="wallet.png" class="img-fluid" style="width: 100px;">
+                                    <h4 class="fw_700 lh_normal mb-3">Lottery</h4>
+                                    <div class="title_text">
+                                        <p class="fw_400">Safe Degens Coin comes equipped with a state-of-the-art utility wallet that simplifies the storage, management, and use of digital assets. This wallet is not just secure but also user-friendly, making it easy for
+                                            both beginners and experienced users to navigate.<br> It supports a wide range of cryptocurrencies and tokens, making it a one-stop solution for all your crypto needs.</p>
+
+                                            <a href="T.MESafeLotteryBot" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">LOTTERY</button>
+                                </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 col-sm-6 text-center border_bottom_color ex_r_border">
+                                <div class="help_word_box my-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="70" class="mb-4" viewBox="0 0 90 70" fill="none">
+                                        <g clip-path="url(#clip0_122_26)">
+                                            <path
+                                                d="M64.0672 7.46533H11.3698C10.0747 7.46533 9.0249 8.51623 9.0249 9.81257V9.81257C9.0249 11.1089 10.0747 12.1598 11.3698 12.1598H64.0672C65.3622 12.1598 66.4121 11.1089 66.4121 9.81257C66.4121 8.51623 65.3622 7.46533 64.0672 7.46533Z"
+                                                fill="#9394A8" />
+                                            <path
+                                                d="M70.9784 30.3906H18.2809C16.9859 30.3906 15.936 30.8383 15.936 31.3906V31.3906C15.936 31.9429 16.9859 32.3906 18.2809 32.3906H70.9784C72.2734 32.3906 73.3232 31.9429 73.3232 31.3906C73.3232 30.8383 72.2734 30.3906 70.9784 30.3906Z"
+                                                fill="url(#paint0_linear_122_26)" />
+                                            <path
+                                                d="M70.9784 45.3167H18.2809C16.9859 45.3167 15.936 45.7644 15.936 46.3166V46.3167C15.936 46.8689 16.9859 47.3167 18.2809 47.3167H70.9784C72.2734 47.3167 73.3232 46.8689 73.3232 46.3166C73.3232 45.7644 72.2734 45.3167 70.9784 45.3167Z"
+                                                fill="#9394A8" />
+                                            <path
+                                                d="M70.9784 60.2429H18.2809C16.9859 60.2429 15.936 60.6906 15.936 61.2429V61.2429C15.936 61.7952 16.9859 62.2429 18.2809 62.2429H70.9784C72.2734 62.2429 73.3232 61.7952 73.3232 61.2429C73.3232 60.6906 72.2734 60.2429 70.9784 60.2429Z"
+                                                fill="#9394A8" />
+                                            <path
+                                                d="M81.0359 13.19C80.9797 13.2703 80.894 13.325 80.7975 13.3421C80.701 13.3591 80.6018 13.3371 80.5215 13.2808L78.5066 11.8774C78.4264 11.8211 78.3717 11.7353 78.3547 11.6387C78.3377 11.5422 78.3597 11.4428 78.4159 11.3625C78.4721 11.2822 78.5579 11.2275 78.6543 11.2105C78.7508 11.1934 78.85 11.2155 78.9303 11.2717L80.9452 12.6751C81.0254 12.7314 81.0801 12.8172 81.0971 12.9138C81.1141 13.0103 81.0921 13.1097 81.0359 13.19Z"
+                                                fill="white" />
+                                            <path
+                                                d="M78.7485 11.5952C78.4511 12.0204 78.0344 12.3477 77.5511 12.5359C77.0678 12.724 76.5397 12.7645 76.0334 12.6521C75.5271 12.5398 75.0655 12.2797 74.7069 11.9047C74.3484 11.5298 74.1089 11.0568 74.0188 10.5456C73.9288 10.0344 73.9922 9.50797 74.201 9.03285C74.4099 8.55773 74.7548 8.15527 75.1921 7.87637C75.6294 7.59746 76.1396 7.45464 76.658 7.46596C77.1764 7.47727 77.6799 7.64223 78.1046 7.93995C78.6736 8.33969 79.0609 8.94903 79.1816 9.63428C79.3023 10.3195 79.1466 11.0247 78.7485 11.5952ZM74.9901 8.96084C74.767 9.27974 74.6434 9.6577 74.6349 10.0469C74.6265 10.4361 74.7335 10.8191 74.9424 11.1475C75.1514 11.4758 75.4529 11.7347 75.8089 11.8915C76.1649 12.0483 76.5593 12.0959 76.9423 12.0283C77.3253 11.9607 77.6797 11.7809 77.9606 11.5117C78.2416 11.2425 78.4364 10.8959 78.5206 10.5158C78.6048 10.1358 78.5745 9.73923 78.4335 9.3764C78.2925 9.01356 78.0473 8.70072 77.7287 8.47742C77.3013 8.17858 76.7729 8.06164 76.2595 8.15227C75.7461 8.2429 75.2896 8.53369 74.9901 8.96084Z"
+                                                fill="white" />
+                                            <path
+                                                d="M84.6774 19.1635H84.6782C85.9659 19.1614 87.1397 18.4085 87.9692 17.1889C88.7981 15.9702 89.2487 14.3463 89.25 12.676V12.6756V7.23204V7.23166C89.2487 5.56135 88.7981 3.93742 87.9692 2.71874C87.1397 1.49914 85.9659 0.74628 84.6782 0.744141H84.6774L5.32264 0.74414L5.32181 0.744141C4.03408 0.74628 2.86026 1.49915 2.03076 2.71874C1.20188 3.93742 0.751283 5.56135 0.75 7.23166V7.23204L0.75 12.6756L0.75 12.676C0.751283 14.3463 1.20188 15.9702 2.03076 17.1889C2.86026 18.4085 4.03408 19.1614 5.32181 19.1635H5.32264H84.6774ZM3.03208 16.37C2.38025 15.4116 1.99794 14.0839 1.99683 12.6754V7.23228C1.99794 5.82378 2.38025 4.49601 3.03208 3.53763C3.68321 2.5803 4.51685 2.10854 5.32307 2.10704H84.6769C85.4831 2.10854 86.3168 2.5803 86.9679 3.53763C87.6198 4.49604 88.0021 5.82388 88.0032 7.23243V12.6752C88.0021 14.0838 87.6198 15.4116 86.9679 16.37C86.3167 17.3275 85.4829 17.7992 84.6765 17.8006H5.32347C4.51713 17.7992 3.68332 17.3275 3.03208 16.37ZM2.85763 3.28113C3.55492 2.25593 4.45111 1.74591 5.32264 1.74414L1.75 7.23204C1.75119 5.77329 2.13504 4.39415 2.79459 3.3761C2.81533 3.34409 2.83635 3.31243 2.85763 3.28113Z"
+                                                fill="#2B2E4A" stroke="#2B2E4A" />
+                                            <mask id="path-8-outside-1_122_26" maskUnits="userSpaceOnUse" x="6.48242"
+                                                y="37.3215" width="78" height="3" fill="black">
+                                                <rect fill="white" x="6.48242" y="37.3215" width="78" height="3" />
+                                                <path
+                                                    d="M82.3943 38.5686H7.60584C7.57311 38.5686 7.54171 38.5556 7.51857 38.5324C7.49542 38.5093 7.48242 38.4778 7.48242 38.4451C7.48242 38.4123 7.49542 38.3809 7.51857 38.3577C7.54171 38.3346 7.57311 38.3215 7.60584 38.3215H82.3943C82.427 38.3215 82.4584 38.3346 82.4815 38.3577C82.5047 38.3809 82.5177 38.4123 82.5177 38.4451C82.5177 38.4778 82.5047 38.5093 82.4815 38.5324C82.4584 38.5556 82.427 38.5686 82.3943 38.5686Z" />
+                                            </mask>
+                                            <path
+                                                d="M82.3943 38.5686H7.60584C7.57311 38.5686 7.54171 38.5556 7.51857 38.5324C7.49542 38.5093 7.48242 38.4778 7.48242 38.4451C7.48242 38.4123 7.49542 38.3809 7.51857 38.3577C7.54171 38.3346 7.57311 38.3215 7.60584 38.3215H82.3943C82.427 38.3215 82.4584 38.3346 82.4815 38.3577C82.5047 38.3809 82.5177 38.4123 82.5177 38.4451C82.5177 38.4778 82.5047 38.5093 82.4815 38.5324C82.4584 38.5556 82.427 38.5686 82.3943 38.5686Z"
+                                                fill="#2B2E4A" />
+                                            <path
+                                                d="M82.3943 38.5686V37.5686V38.5686ZM7.60584 38.5686V37.5686V38.5686ZM7.48242 38.4451H8.48242H7.48242ZM7.60584 38.3215V39.3215V38.3215ZM82.3943 37.5686H7.60584V39.5686H82.3943V37.5686ZM7.60584 37.5686C7.83863 37.5686 8.0617 37.6612 8.22603 37.8257L6.8111 39.2392C7.02172 39.45 7.30758 39.5686 7.60584 39.5686V37.5686ZM8.22603 37.8257C8.39033 37.9901 8.48242 38.213 8.48242 38.4451H6.48242C6.48242 38.7427 6.60052 39.0284 6.8111 39.2392L8.22603 37.8257ZM8.48242 38.4451C8.48242 38.6772 8.39031 38.9 8.22603 39.0645L6.8111 37.651C6.60054 37.8617 6.48242 38.1474 6.48242 38.4451H8.48242ZM8.22603 39.0645C8.06176 39.2289 7.83871 39.3215 7.60584 39.3215V37.3215C7.3075 37.3215 7.02166 37.4402 6.8111 37.651L8.22603 39.0645ZM7.60584 39.3215H82.3943V37.3215H7.60584V39.3215ZM82.3943 39.3215C82.1613 39.3215 81.9383 39.2289 81.7741 39.0645L83.189 37.651C82.9785 37.4403 82.6927 37.3215 82.3943 37.3215V39.3215ZM81.7741 39.0645C81.6098 38.9 81.5177 38.6772 81.5177 38.4451H83.5177C83.5177 38.1474 83.3996 37.8617 83.189 37.651L81.7741 39.0645ZM81.5177 38.4451C81.5177 38.213 81.6098 37.9901 81.7741 37.8257L83.189 39.2392C83.3996 39.0284 83.5177 38.7427 83.5177 38.4451H81.5177ZM81.7741 37.8257C81.9384 37.6612 82.1614 37.5686 82.3943 37.5686V39.5686C82.6926 39.5686 82.9784 39.45 83.189 39.2392L81.7741 37.8257Z"
+                                                fill="#2B2E4A" mask="url(#path-8-outside-1_122_26)" />
+                                            <mask id="path-10-outside-2_122_26" maskUnits="userSpaceOnUse" x="6.48242"
+                                                y="52.2537" width="78" height="3" fill="black">
+                                                <rect fill="white" x="6.48242" y="52.2537" width="78" height="3" />
+                                                <path
+                                                    d="M82.3943 53.5007H7.60584C7.57311 53.5007 7.54171 53.4877 7.51857 53.4646C7.49542 53.4414 7.48242 53.41 7.48242 53.3772C7.48242 53.3444 7.49542 53.313 7.51857 53.2898C7.54171 53.2667 7.57311 53.2537 7.60584 53.2537H82.3943C82.427 53.2537 82.4584 53.2667 82.4815 53.2898C82.5047 53.313 82.5177 53.3444 82.5177 53.3772C82.5177 53.41 82.5047 53.4414 82.4815 53.4646C82.4584 53.4877 82.427 53.5007 82.3943 53.5007Z" />
+                                            </mask>
+                                            <path
+                                                d="M82.3943 53.5007H7.60584C7.57311 53.5007 7.54171 53.4877 7.51857 53.4646C7.49542 53.4414 7.48242 53.41 7.48242 53.3772C7.48242 53.3444 7.49542 53.313 7.51857 53.2898C7.54171 53.2667 7.57311 53.2537 7.60584 53.2537H82.3943C82.427 53.2537 82.4584 53.2667 82.4815 53.2898C82.5047 53.313 82.5177 53.3444 82.5177 53.3772C82.5177 53.41 82.5047 53.4414 82.4815 53.4646C82.4584 53.4877 82.427 53.5007 82.3943 53.5007Z"
+                                                fill="#2B2E4A" />
+                                            <path
+                                                d="M7.60584 53.5007V52.5007V53.5007ZM7.48242 53.3772H8.48242H7.48242ZM82.3943 52.5007H7.60584V54.5007H82.3943V52.5007ZM7.60584 52.5007C7.83863 52.5007 8.0617 52.5933 8.22603 52.7578L6.8111 54.1713C7.02172 54.3821 7.30758 54.5007 7.60584 54.5007V52.5007ZM8.22603 52.7578C8.39033 52.9223 8.48242 53.1451 8.48242 53.3772H6.48242C6.48242 53.6748 6.60052 53.9605 6.8111 54.1713L8.22603 52.7578ZM8.48242 53.3772C8.48242 53.6094 8.39028 53.8322 8.22603 53.9966L6.8111 52.5831C6.60057 52.7938 6.48242 53.0795 6.48242 53.3772H8.48242ZM8.22603 53.9966C8.0617 54.1611 7.83863 54.2537 7.60584 54.2537V52.2537C7.30758 52.2537 7.02172 52.3723 6.8111 52.5831L8.22603 53.9966ZM7.60584 54.2537H82.3943V52.2537H7.60584V54.2537ZM82.3943 54.2537C82.1614 54.2537 81.9384 54.161 81.7741 53.9966L83.189 52.5831C82.9784 52.3723 82.6926 52.2537 82.3943 52.2537V54.2537ZM81.7741 53.9966C81.6098 53.8322 81.5177 53.6094 81.5177 53.3772H83.5177C83.5177 53.0795 83.3995 52.7938 83.189 52.5831L81.7741 53.9966ZM81.5177 53.3772C81.5177 53.1451 81.6098 52.9223 81.7741 52.7578L83.189 54.1713C83.3996 53.9605 83.5177 53.6748 83.5177 53.3772H81.5177ZM81.7741 52.7578C81.9384 52.5934 82.1614 52.5007 82.3943 52.5007V54.5007C82.6926 54.5007 82.9784 54.3821 83.189 54.1713L81.7741 52.7578Z"
+                                                fill="#2B2E4A" mask="url(#path-10-outside-2_122_26)" />
+                                            <path
+                                                d="M82.8353 67.8689C82.7185 67.7519 82.5599 67.686 82.3943 67.686H7.60584C7.44026 67.686 7.28166 67.7519 7.16484 67.8689C7.048 67.9858 6.98242 68.1443 6.98242 68.3096C6.98242 68.4748 7.04797 68.6333 7.16484 68.7503C7.28172 68.8673 7.44035 68.9331 7.60584 68.9331H82.3943L82.8353 67.8689ZM82.8353 67.8689C82.9521 67.9859 83.0177 68.1444 83.0177 68.3096C83.0177 68.4747 82.9522 68.6333 82.8353 68.7503M82.8353 67.8689V68.7503M82.8353 68.7503C82.8353 68.7503 82.8353 68.7503 82.8352 68.7503L82.4815 68.3969L82.8353 68.7503ZM82.1278 68.0435L82.1278 68.0436C82.1278 68.0436 82.1278 68.0436 82.1278 68.0435Z"
+                                                fill="#2B2E4A" stroke="#2B2E4A" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_26" x1="85.856" y1="31.0343"
+                                                x2="85.29" y2="37.5522" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#1498EB" />
+                                                <stop offset="0.897208" stop-color="#962DE3" />
+                                            </linearGradient>
+                                            <clipPath id="clip0_122_26">
+                                                <rect width="90" height="69.6774" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <h4 class="fw_700 lh_normal mb-3">Bridge</h4>
+                                    <div class="title_text">
+                                        <p class="fw_400">Safe Degens boasts a bridge feature that enhances interoperability with other blockchain networks.<br> This means that users can seamlessly transfer assets between Safe Degens network and other compatible blockchains,
+                                            facilitating cross-chain transactions and expanding the possibilities for decentralized applications.</p>
+
+                                            <a href="https://safedegens.com/bridge" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">BRIDGE</button>
+                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                            <div class="col-md-4 col-12 col-sm-6 text-center  ex_b_border border_color_right">
+                                <div class="help_word_box my-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="77" class="mb-4" viewBox="0 0 90 77" fill="none">
+                                        <rect x="21" y="1" width="68" height="74" rx="3" fill="#1E1633" stroke="#2B2E4A"
+                                            stroke-width="2" />
+                                        <path
+                                            d="M50.7154 28.2873H33.9682C33.732 28.287 33.5056 28.1932 33.3386 28.0264C33.1716 27.8597 33.0777 27.6336 33.0774 27.3977V10.6744C33.0777 10.4386 33.1716 10.2125 33.3386 10.0457C33.5056 9.87899 33.732 9.78518 33.9682 9.78491H50.7154C50.9515 9.78518 51.178 9.87899 51.345 10.0457C51.512 10.2125 51.6059 10.4386 51.6062 10.6744V27.3977C51.6059 27.6336 51.512 27.8597 51.345 28.0264C51.178 28.1932 50.9515 28.287 50.7154 28.2873ZM33.9682 10.1407C33.8265 10.1409 33.6906 10.1972 33.5904 10.2972C33.4902 10.3973 33.4339 10.5329 33.4337 10.6744V27.3977C33.4339 27.5392 33.4902 27.6749 33.5904 27.775C33.6906 27.875 33.8265 27.9313 33.9682 27.9314H50.7154C50.8571 27.9313 50.9929 27.875 51.0931 27.775C51.1933 27.6749 51.2497 27.5392 51.2499 27.3977V10.6744C51.2497 10.5329 51.1933 10.3973 51.0931 10.2972C50.9929 10.1972 50.8571 10.1409 50.7154 10.1407H33.9682Z"
+                                            fill="#2B2E4A" />
+                                        <path
+                                            d="M45.9051 30.3332H29.1579C28.9454 30.333 28.7416 30.2486 28.5913 30.0985C28.441 29.9484 28.3564 29.7449 28.3562 29.5326V12.8094C28.3564 12.5971 28.441 12.3936 28.5913 12.2435C28.7416 12.0935 28.9454 12.009 29.1579 12.0088H45.9051C46.1177 12.009 46.3214 12.0934 46.4717 12.2435C46.622 12.3936 46.7066 12.5971 46.7068 12.8094V29.5326C46.7066 29.7449 46.622 29.9484 46.4717 30.0985C46.3214 30.2486 46.1177 30.333 45.9051 30.3332Z"
+                                            fill="#2B2E4A" />
+                                        <path
+                                            d="M81.5374 38.5169H29.1579C28.9453 38.5169 28.7414 38.4326 28.591 38.2825C28.4407 38.1323 28.3562 37.9287 28.3562 37.7164C28.3562 37.504 28.4407 37.3004 28.591 37.1503C28.7414 37.0001 28.9453 36.9158 29.1579 36.9158H81.5374C81.75 36.9158 81.9539 37.0001 82.1043 37.1503C82.2546 37.3004 82.3391 37.504 82.3391 37.7164C82.3391 37.9287 82.2546 38.1323 82.1043 38.2825C81.9539 38.4326 81.75 38.5169 81.5374 38.5169Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M68.8879 44.0321H29.1579C28.9453 44.0321 28.7414 43.9477 28.591 43.7976C28.4407 43.6474 28.3562 43.4438 28.3562 43.2315C28.3562 43.0192 28.4407 42.8155 28.591 42.6654C28.7414 42.5153 28.9453 42.4309 29.1579 42.4309H68.8879C69.1005 42.4309 69.3045 42.5153 69.4548 42.6654C69.6052 42.8155 69.6896 43.0192 69.6896 43.2315C69.6896 43.4438 69.6052 43.6474 69.4548 43.7976C69.3045 43.9477 69.1005 44.0321 68.8879 44.0321Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M81.3592 18.2354H58.1982C57.9856 18.2354 57.7817 18.1511 57.6313 18.001C57.481 17.8508 57.3965 17.6472 57.3965 17.4349C57.3965 17.2225 57.481 17.0189 57.6313 16.8688C57.7817 16.7186 57.9856 16.6343 58.1982 16.6343H81.3592C81.5718 16.6343 81.7757 16.7186 81.9261 16.8688C82.0765 17.0189 82.1609 17.2225 82.1609 17.4349C82.1609 17.6472 82.0765 17.8508 81.9261 18.001C81.7757 18.1511 81.5718 18.2354 81.3592 18.2354Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M75.579 23.7506H58.1982C57.9856 23.7506 57.7817 23.6662 57.6313 23.5161C57.481 23.366 57.3965 23.1623 57.3965 22.95C57.3965 22.7377 57.481 22.534 57.6313 22.3839C57.7817 22.2338 57.9856 22.1494 58.1982 22.1494H75.579C75.7916 22.1494 75.9955 22.2338 76.1459 22.3839C76.2963 22.534 76.3807 22.7377 76.3807 22.95C76.3807 23.1623 76.2963 23.366 76.1459 23.5161C75.9955 23.6662 75.7916 23.7506 75.579 23.7506Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M81.5374 49.5472H29.1579C28.9453 49.5472 28.7414 49.4629 28.591 49.3127C28.4407 49.1626 28.3562 48.959 28.3562 48.7466C28.3562 48.5343 28.4407 48.3307 28.591 48.1805C28.7414 48.0304 28.9453 47.946 29.1579 47.946H81.5374C81.75 47.946 81.9539 48.0304 82.1043 48.1805C82.2546 48.3307 82.3391 48.5343 82.3391 48.7466C82.3391 48.959 82.2546 49.1626 82.1043 49.3127C81.9539 49.4629 81.75 49.5472 81.5374 49.5472Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M68.8879 55.0623H29.1579C28.9453 55.0623 28.7414 54.978 28.591 54.8279C28.4407 54.6777 28.3562 54.4741 28.3562 54.2618C28.3562 54.0494 28.4407 53.8458 28.591 53.6957C28.7414 53.5455 28.9453 53.4612 29.1579 53.4612H68.8879C69.1005 53.4612 69.3045 53.5455 69.4548 53.6957C69.6052 53.8458 69.6896 54.0494 69.6896 54.2618C69.6896 54.4741 69.6052 54.6777 69.4548 54.8279C69.3045 54.978 69.1005 55.0623 68.8879 55.0623Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M81.5374 60.5775H29.1579C28.9453 60.5775 28.7414 60.4931 28.591 60.343C28.4407 60.1929 28.3562 59.9892 28.3562 59.7769C28.3562 59.5646 28.4407 59.3609 28.591 59.2108C28.7414 59.0607 28.9453 58.9763 29.1579 58.9763H81.5374C81.75 58.9763 81.9539 59.0607 82.1043 59.2108C82.2546 59.3609 82.3391 59.5646 82.3391 59.7769C82.3391 59.9892 82.2546 60.1929 82.1043 60.343C81.9539 60.4931 81.75 60.5775 81.5374 60.5775Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M81.5374 66.0926H29.1579C28.9453 66.0926 28.7414 66.0083 28.591 65.8581C28.4407 65.708 28.3562 65.5044 28.3562 65.292C28.3562 65.0797 28.4407 64.8761 28.591 64.7259C28.7414 64.5758 28.9453 64.4915 29.1579 64.4915H81.5374C81.75 64.4915 81.9539 64.5758 82.1043 64.7259C82.2546 64.8761 82.3391 65.0797 82.3391 65.292C82.3391 65.5044 82.2546 65.708 82.1043 65.8581C81.9539 66.0083 81.75 66.0926 81.5374 66.0926Z"
+                                            fill="#9394A8" />
+                                        <path
+                                            d="M39.3005 69.0833H0.995787C0.759613 69.083 0.533193 68.9892 0.366193 68.8225C0.199193 68.6557 0.105251 68.4296 0.10498 68.1938V44.5321C0.105251 44.2963 0.199193 44.0702 0.366193 43.9034C0.533193 43.7367 0.759613 43.6428 0.995787 43.6426H39.3005C39.5366 43.6428 39.7631 43.7367 39.9301 43.9034C40.0971 44.0702 40.191 44.2963 40.1913 44.5321V68.1938C40.191 68.4296 40.0971 68.6557 39.9301 68.8225C39.7631 68.9892 39.5366 69.083 39.3005 69.0833Z"
+                                            fill="url(#paint0_linear_122_176)" />
+                                        <path
+                                            d="M39.3005 69.0833H0.995787C0.759613 69.083 0.533193 68.9892 0.366193 68.8225C0.199193 68.6557 0.105251 68.4296 0.10498 68.1938V44.5321C0.105251 44.2963 0.199193 44.0702 0.366193 43.9034C0.533193 43.7367 0.759613 43.6428 0.995787 43.6426H39.3005C39.5366 43.6428 39.7631 43.7367 39.9301 43.9034C40.0971 44.0702 40.191 44.2963 40.1913 44.5321V68.1938C40.191 68.4296 40.0971 68.6557 39.9301 68.8225C39.7631 68.9892 39.5366 69.083 39.3005 69.0833ZM0.995787 43.9984C0.854081 43.9985 0.718222 44.0548 0.618021 44.1549C0.517819 44.2549 0.461458 44.3906 0.461303 44.5321V68.1938C0.461458 68.3353 0.517819 68.4709 0.618021 68.571C0.718222 68.6711 0.854081 68.7273 0.995787 68.7275H39.3005C39.4422 68.7273 39.578 68.6711 39.6782 68.571C39.7784 68.4709 39.8348 68.3353 39.835 68.1938V44.5321C39.8348 44.3906 39.7784 44.2549 39.6782 44.1549C39.578 44.0548 39.4422 43.9985 39.3005 43.9984H0.995787Z"
+                                            fill="#3F3D56" />
+                                        <path
+                                            d="M31.7286 54.4061H8.5676C8.35496 54.4061 8.15105 54.3217 8.0007 54.1716C7.85034 54.0215 7.76587 53.8178 7.76587 53.6055C7.76587 53.3932 7.85034 53.1896 8.0007 53.0394C8.15105 52.8893 8.35496 52.8049 8.5676 52.8049H31.7286C31.9412 52.8049 32.1451 52.8893 32.2955 53.0394C32.4458 53.1896 32.5303 53.3932 32.5303 53.6055C32.5303 53.8178 32.4458 54.0215 32.2955 54.1716C32.1451 54.3217 31.9412 54.4061 31.7286 54.4061Z"
+                                            fill="white" />
+                                        <path
+                                            d="M31.7286 59.921H8.5676C8.35496 59.921 8.15105 59.8366 8.0007 59.6865C7.85034 59.5364 7.76587 59.3327 7.76587 59.1204C7.76587 58.9081 7.85034 58.7045 8.0007 58.5543C8.15105 58.4042 8.35496 58.3198 8.5676 58.3198H31.7286C31.9412 58.3198 32.1451 58.4042 32.2955 58.5543C32.4458 58.7045 32.5303 58.9081 32.5303 59.1204C32.5303 59.3327 32.4458 59.5364 32.2955 59.6865C32.1451 59.8366 31.9412 59.921 31.7286 59.921Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_176" x1="48.9458" y1="51.8304"
+                                                x2="11.2108" y2="75.6922" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#1498EB" />
+                                                <stop offset="0.897208" stop-color="#962DE3" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h4 class="fw_700 lh_normal mb-3">Staking</h4>
+                                    <div class="title_text">
+                                        <p class="fw_400">With Safe Degens, users have the opportunity to stake their coins and earn rewards. Staking not only helps secure the network but also allows users to participate in the governance of the ecosystem. The staking
+                                            mechanism is designed to be user-friendly, enabling both newcomers and experienced stakers to take part.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 col-sm-6 text-center ex_b_border border_color_right">
+                                <div class="help_word_box my-5">
+                           <img src="scanner.png" alt="">
+                                    <h4 class="fw_700 lh_normal mb-3">Safe Scanner Bot</h4>
+                                    <div class="title_text">
+                                        <a href="T.MESafeSecureScanBot" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">SCAN NOW</button>
+                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 col-sm-6 ex_b_border text-center ">
+                                <div class="help_word_box my-5">
+                                   <img src="devv bot.png" alt="">
+                                    <h4 class="fw_700 lh_normal mb-3">SAFE DEV BOT</h4>
+                                    <div class="title_text">
+                                        <a href="https://t.me/SafeDev_bot" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">Create Your Token For Free</button>
+                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+            </section>
+            <!-- ======End Help Us section ====== -->
+            <!-- ====== Get started section ====== -->
+            <section class="get_stardet_section margin_bottom_120" id="tokenomics">
+                <div class="container">
+                    <div class="start_ai_content border_solid border_radius padding_60 position-relative">
+                        <div class="sub_title text-center">
+                            <h5 class="mb-3">Tokenomics</h5>
+                            <span class="gradient_line  justify-content-center">
+                            </span>
+                        </div>
+                        <div class="main_title mb-3">
+                            <h2 class="fw_800 text-center">Token Details</h2>
+                        </div>
+                        <div class="title_text">
+                            <p class="fw_400 text-center">Safe Degens built on Binance Network
+                            </p>
+                        </div>
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0x6482aC16643ebaFbd86DBeCEDAF6b49cA0a36E5E" class="main_btn d-flex justify-content-center">
+                            <button type="button" class="btn bg_gradient border-0">Pancakeswap</button>
+                        </a>
+                        <div class="required_creta margin_top_30">
+                            <ul class="d-flex justify-content-center">
+                                <li class="margin_left_46 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_132_265)">
+                                            <path
+                                                d="M8.62535 16H7.34402C7.21105 15.9333 7.06391 15.9504 6.92344 15.93C5.17984 15.6774 3.66842 14.9463 2.41084 13.7124C1.13743 12.4636 0.362957 10.9522 0.0882666 9.1865C0.0590886 8.99935 0.067842 8.80594 0.000732422 8.62504V7.3437C0.0665915 7.21073 0.0503351 7.06359 0.070343 6.9227C0.299599 5.32458 0.936515 3.91153 2.01152 2.70647C3.29785 1.26424 4.90015 0.388902 6.81381 0.087951C7.00097 0.0583561 7.19396 0.0671095 7.37528 0H8.59409C8.6116 0.0362642 8.64661 0.0270939 8.67579 0.0295949C9.89293 0.130884 11.0334 0.483105 12.0734 1.12169C14.213 2.4347 15.4993 4.33127 15.9119 6.81391C15.9449 7.01107 15.9349 7.21448 16.0003 7.40664V8.65671C15.9503 8.68131 15.9699 8.72924 15.9661 8.76717C15.8315 10.0677 15.4268 11.2765 14.6973 12.3636C13.3693 14.3427 11.529 15.534 9.16973 15.9141C8.98841 15.9433 8.80042 15.9321 8.62494 16.0004L8.62535 16ZM12.0108 5.68639C12.0075 5.40753 11.8379 5.20287 11.604 5.16327C11.3998 5.12867 11.2455 5.21704 11.1042 5.35834C9.72203 6.7443 8.33607 8.12692 6.9547 9.51455C6.85883 9.61084 6.80923 9.62418 6.70585 9.51913C6.1002 8.90264 5.48537 8.29491 4.87555 7.68258C4.73758 7.5442 4.57835 7.47167 4.38286 7.51335C4.19487 7.55337 4.06232 7.66758 4.01063 7.85307C3.95436 8.05398 4.00646 8.2303 4.15736 8.38077C4.91349 9.13398 5.66711 9.8897 6.42241 10.6442C6.69376 10.9151 6.96345 10.9147 7.23689 10.6429C7.66873 10.2132 8.09848 9.78174 8.52948 9.35115C9.62282 8.25781 10.7158 7.16405 11.8103 6.07154C11.9291 5.95274 12.0179 5.82477 12.0113 5.6868L12.0108 5.68639Z"
+                                                fill="#4BAD4F" />
+                                            <path
+                                                d="M12.0105 5.68683C12.0172 5.8248 11.9284 5.95277 11.8096 6.07156C10.715 7.16366 9.62207 8.25783 8.52873 9.35118C8.09814 9.78176 7.66797 10.2132 7.23614 10.6429C6.96311 10.9151 6.69301 10.9151 6.42165 10.6442C5.66636 9.89014 4.91273 9.13443 4.1566 8.3808C4.00571 8.23032 3.95361 8.054 4.00988 7.85309C4.06198 7.6676 4.19453 7.55339 4.38211 7.51338C4.5776 7.47169 4.73683 7.54422 4.8748 7.68261C5.48504 8.29493 6.09986 8.90225 6.7051 9.51916C6.80847 9.6242 6.85807 9.61086 6.95394 9.51458C8.3349 8.12737 9.72086 6.74474 11.1035 5.35837C11.2448 5.21665 11.399 5.1287 11.6033 5.16329C11.8371 5.20289 12.0063 5.40755 12.0101 5.68641L12.0105 5.68683Z"
+                                                fill="#FBFDFB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_132_265">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg> 21.000.000 Supply
+                                </li>
+                                <li class="margin_left_46 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_132_269)">
+                                            <path
+                                                d="M8.62511 16H7.34377C7.2108 15.9333 7.06366 15.9504 6.92319 15.93C5.17959 15.6774 3.66817 14.9463 2.4106 13.7124C1.13718 12.4636 0.362713 10.9522 0.0880225 9.1865C0.0588444 8.99935 0.0675978 8.80594 0.000488281 8.62504V7.3437C0.0663473 7.21073 0.050091 7.06359 0.0700988 6.9227C0.299355 5.32458 0.93627 3.91153 2.01127 2.70647C3.29761 1.26424 4.8999 0.388902 6.81357 0.087951C7.00072 0.0583561 7.19371 0.0671095 7.37504 0H8.59384C8.61135 0.0362642 8.64637 0.0270939 8.67554 0.0295949C9.89269 0.130884 11.0331 0.483105 12.0731 1.12169C14.2127 2.4347 15.499 4.33127 15.9117 6.81391C15.9446 7.01107 15.9346 7.21448 16.0001 7.40664V8.65671C15.9501 8.68131 15.9696 8.72924 15.9659 8.76717C15.8313 10.0677 15.4265 11.2765 14.6971 12.3636C13.369 14.3427 11.5287 15.534 9.16949 15.9141C8.98817 15.9433 8.80018 15.9321 8.62469 16.0004L8.62511 16ZM12.0106 5.68639C12.0073 5.40753 11.8376 5.20287 11.6038 5.16327C11.3995 5.12867 11.2453 5.21704 11.104 5.35834C9.72179 6.7443 8.33583 8.12692 6.95445 9.51455C6.85858 9.61084 6.80898 9.62418 6.70561 9.51913C6.09995 8.90264 5.48513 8.29491 4.87531 7.68258C4.73734 7.5442 4.57811 7.47167 4.38262 7.51335C4.19463 7.55337 4.06207 7.66758 4.01039 7.85307C3.95412 8.05398 4.00622 8.2303 4.15711 8.38077C4.91324 9.13398 5.66687 9.8897 6.42216 10.6442C6.69352 10.9151 6.96321 10.9147 7.23665 10.6429C7.66848 10.2132 8.09823 9.78174 8.52924 9.35115C9.62258 8.25781 10.7155 7.16405 11.8101 6.07154C11.9289 5.95274 12.0177 5.82477 12.011 5.6868L12.0106 5.68639Z"
+                                                fill="#4BAD4F" />
+                                            <path
+                                                d="M12.0105 5.68683C12.0172 5.8248 11.9284 5.95277 11.8096 6.07156C10.715 7.16366 9.62207 8.25783 8.52873 9.35118C8.09814 9.78176 7.66797 10.2132 7.23614 10.6429C6.96311 10.9151 6.69301 10.9151 6.42165 10.6442C5.66636 9.89014 4.91273 9.13443 4.1566 8.3808C4.00571 8.23032 3.95361 8.054 4.00988 7.85309C4.06198 7.6676 4.19453 7.55339 4.38211 7.51338C4.5776 7.47169 4.73683 7.54422 4.8748 7.68261C5.48504 8.29493 6.09986 8.90225 6.7051 9.51916C6.80847 9.6242 6.85807 9.61086 6.95394 9.51458C8.3349 8.12737 9.72086 6.74474 11.1035 5.35837C11.2448 5.21665 11.399 5.1287 11.6033 5.16329C11.8371 5.20289 12.0063 5.40755 12.0101 5.68641L12.0105 5.68683Z"
+                                                fill="#FBFDFB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_132_269">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg> 10% Trading Fee
+                                </li>
+                                <li class="margin_left_46 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_132_273)">
+                                            <path
+                                                d="M8.62511 16H7.34377C7.2108 15.9333 7.06366 15.9504 6.92319 15.93C5.17959 15.6774 3.66817 14.9463 2.4106 13.7124C1.13718 12.4636 0.362713 10.9522 0.0880225 9.1865C0.0588444 8.99935 0.0675978 8.80594 0.000488281 8.62504V7.3437C0.0663473 7.21073 0.050091 7.06359 0.0700988 6.9227C0.299355 5.32458 0.93627 3.91153 2.01127 2.70647C3.29761 1.26424 4.8999 0.388902 6.81357 0.087951C7.00072 0.0583561 7.19371 0.0671095 7.37504 0H8.59384C8.61135 0.0362642 8.64637 0.0270939 8.67554 0.0295949C9.89269 0.130884 11.0331 0.483105 12.0731 1.12169C14.2127 2.4347 15.499 4.33127 15.9117 6.81391C15.9446 7.01107 15.9346 7.21448 16.0001 7.40664V8.65671C15.9501 8.68131 15.9696 8.72924 15.9659 8.76717C15.8313 10.0677 15.4265 11.2765 14.6971 12.3636C13.369 14.3427 11.5287 15.534 9.16949 15.9141C8.98817 15.9433 8.80018 15.9321 8.62469 16.0004L8.62511 16ZM12.0106 5.68639C12.0073 5.40753 11.8376 5.20287 11.6038 5.16327C11.3995 5.12867 11.2453 5.21704 11.104 5.35834C9.72179 6.7443 8.33583 8.12692 6.95445 9.51455C6.85858 9.61084 6.80898 9.62418 6.70561 9.51913C6.09995 8.90264 5.48513 8.29491 4.87531 7.68258C4.73734 7.5442 4.57811 7.47167 4.38262 7.51335C4.19463 7.55337 4.06207 7.66758 4.01039 7.85307C3.95412 8.05398 4.00622 8.2303 4.15711 8.38077C4.91324 9.13398 5.66687 9.8897 6.42216 10.6442C6.69352 10.9151 6.96321 10.9147 7.23665 10.6429C7.66848 10.2132 8.09823 9.78174 8.52924 9.35115C9.62258 8.25781 10.7155 7.16405 11.8101 6.07154C11.9289 5.95274 12.0177 5.82477 12.011 5.6868L12.0106 5.68639Z"
+                                                fill="#4BAD4F" />
+                                            <path
+                                                d="M12.0105 5.68683C12.0172 5.8248 11.9284 5.95277 11.8096 6.07156C10.715 7.16366 9.62207 8.25783 8.52873 9.35118C8.09814 9.78176 7.66797 10.2132 7.23614 10.6429C6.96311 10.9151 6.69301 10.9151 6.42165 10.6442C5.66636 9.89014 4.91273 9.13443 4.1566 8.3808C4.00571 8.23032 3.95361 8.054 4.00988 7.85309C4.06198 7.6676 4.19453 7.55339 4.38211 7.51338C4.5776 7.47169 4.73683 7.54422 4.8748 7.68261C5.48504 8.29493 6.09986 8.90225 6.7051 9.51916C6.80847 9.6242 6.85807 9.61086 6.95394 9.51458C8.3349 8.12737 9.72086 6.74474 11.1035 5.35837C11.2448 5.21665 11.399 5.1287 11.6033 5.16329C11.8371 5.20289 12.0063 5.40755 12.0101 5.68641L12.0105 5.68683Z"
+                                                fill="#FBFDFB" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_132_273">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg> 9 Decimal
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="get_start_gadient position-absolute">
+                            <img src="image/Ellipse-4.png" class="img-fluid" alt="Ellipse-4">
+                        </div>
+                        <div class="get_start_gadient-1 position-absolute">
+                            <img src="image/Ellipse-5.png" class="img-fluid" alt="Ellipse-5">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======End Get started section ====== -->
+            <!-- ====== Client Reviews slider ====== -->
+            <section class="client_reviews_section margin_bottom_120">
+                <div class="container">
+                    <div class="review_contant">
+                        <div class="sub_title text-center">
+                            <h5 class="mb-3">Why Safe Degens?</h5>
+                            <span class="gradient_line  justify-content-center">
+                            </span>
+                        </div>
+                        <div class="main_title mb-3">
+                            <h2 class="fw_800 text-center">Why Safe Degens?</h2>
+                        </div>
+
+
+                    </div>
+                    <div class="autoplay ">
+                        <div class="align-items-start">
+                            <div class="bg_gray border_radius_10 position-relative review_box_width margin_top_50 ms-2 ms-md-4">
+                                <div class="padding_24 mb-3">
+                                    <p class="text-center lh_22">Security: Safe Degens employs state-of-the-art security protocols to safeguard your assets and transactions. Your peace of mind is our priority.</p>
+                                </div>
+                            </div>
+                            <div class="review_img d-flex position-relative flex-column align-items-center">
+                                <img src="why.png" class="img-fluid" alt="reviews-img" style="width: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="bg_gray border_radius_10 position-relative review_box_width margin_top_50 ms-2 ms-md-4">
+                                <div class="padding_24 mb-3">
+                                    <p class="text-center lh_22">Scalability: Safe Degens Layer 1 blockchain is built to handle a high volume of transactions quickly and cost-effectively, ensuring smooth and efficient user experiences.</p>
+                                </div>
+                            </div>
+                            <div class="review_img d-flex position-relative flex-column align-items-center">
+                                <img src="why.png" class="img-fluid" alt="reviews-img" style="width: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="bg_gray border_radius_10 position-relative review_box_width margin_top_50 ms-2 ms-md-4">
+                                <div class="padding_24 mb-3">
+                                    <p class="text-center lh_22">Interoperability: The bridge feature opens up a world of opportunities by connecting Safe Degens to other blockchain networks, enabling users to explore new horizons.</p>
+                                </div>
+                            </div>
+                            <div class="review_img d-flex position-relative flex-column align-items-center">
+                                <img src="why.png" class="img-fluid" alt="reviews-img" style="width: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="bg_gray border_radius_10 position-relative review_box_width margin_top_50 ms-2 ms-md-4">
+                                <div class="padding_24 mb-3">
+                                    <p class="text-center lh_22">Passive Income: Staking with Safe Degens provides users with an opportunity to earn passive income while actively participating in network maintenance and decision-making.</p>
+                                </div>
+                            </div>
+                            <div class="review_img d-flex position-relative flex-column align-items-center">
+                                <img src="why.png" class="img-fluid" alt="reviews-img" style="width: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="bg_gray border_radius_10 position-relative review_box_width margin_top_50 ms-2 ms-md-4">
+                                <div class="padding_24 mb-3">
+                                    <p class="text-center lh_22"> User-Friendly: Whether you're new to cryptocurrencies or a seasoned pro, Safe Degens intuitive interface and comprehensive resources ensure a seamless and enjoyable experience.</p>
+                                </div>
+                            </div>
+                            <div class="review_img d-flex position-relative flex-column align-items-center">
+                                <img src="why.png" class="img-fluid" alt="reviews-img" style="width: 100px;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== End Client Reviews slider====== -->
+
+            <!-- ====== Creta quesion section====== -->
+            <section class="choose_plan_section margin_bottom_120" id="roadmap">
+                <div class="container">
+                    <div class="plan_contenat">
+                        <div class="sub_title text-center">
+                            <h5 class="mb-3">Our Journey</h5>
+                            <span class="gradient_line  justify-content-center">
+                            </span>
+                        </div>
+                        <div class="main_title mb-3">
+                            <h2 class="fw_800 text-center">ROADMAP</h2>
+                        </div>
+
+                    </div>
+                    <div class="quesion_box">
+                        <div class="">
+                            <div class="quesion">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 border_color_left">
+                                        <div class="d-flex">
+                                            <div class="quesion_dot"></div>
+                                            <span class="quesion_line"></span>
+                                            <div class="bg_gray border_radius_10 margin_top_50 me-2">
+                                                <div class="quesion_txt padding_35">
+                                                    <h4 class="text-start fw_700 lh_normal mb-lg-4">Phase 1</h4>
+                                                    <p class="text-start lh_22 leter_space_42">Launch at Pancakeswap<br> Utilities Released
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 border_color_left">
+                                        <div class="d-flex">
+                                            <div class="quesion_dot"></div>
+                                            <span class="quesion_line"></span>
+                                            <div class="bg_gray border_radius_10 margin_top_50 me-2">
+                                                <div class="quesion_txt padding_35">
+                                                    <h4 class="text-start fw_700 lh_normal">Phase 2</h4>
+                                                    <p class="text-start lh_22 leter_space_42">Marketing Strategy's
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 border_color_left">
+                                        <div class="d-flex">
+                                            <div class="quesion_dot"></div>
+                                            <span class="quesion_line"></span>
+                                            <div class="bg_gray border_radius_10 margin_top_50 me-2">
+                                                <div class="quesion_txt padding_35">
+                                                    <h4 class="text-start fw_700 lh_normal">Phase 3</h4>
+                                                    <p class="text-start lh_22 leter_space_42">Coinmarketcap<br>Coingecko<br>Bscscan Update
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 border_color_left">
+                                        <div class="d-flex">
+                                            <div class="quesion_dot"></div>
+                                            <span class="quesion_line"></span>
+                                            <div class="bg_gray border_radius_10 margin_top_50 me-2">
+                                                <div class="quesion_txt padding_35">
+                                                    <h4 class="text-start fw_700 lh_normal mb-lg-4">Phase 4</h4>
+                                                    <p class="text-start lh_22 leter_space_42">Partnership Influencer
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 border_color_left">
+                                        <div class="d-flex">
+                                            <div class="quesion_dot"></div>
+                                            <span class="quesion_line"></span>
+                                            <div class="bg_gray border_radius_10 margin_top_50 me-2">
+                                                <div class="quesion_txt padding_35">
+                                                    <h4 class="text-start fw_700 lh_normal">Phase 5
+                                                    </h4>
+                                                    <p class="text-start lh_22 leter_space_42">Safe Degens Release
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 border_color_left">
+                                        <div class="d-flex">
+                                            <div class="quesion_dot"></div>
+                                            <span class="quesion_line"></span>
+                                            <div class="bg_gray border_radius_10 margin_top_50 me-2">
+                                                <div class="quesion_txt padding_35">
+                                                    <h4 class="text-start fw_700 lh_normal">Phase 6</h4>
+                                                    <p class="text-start lh_22 leter_space_42">Cex apply and Listing<br>Global Expand
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======End Creta quesion section====== -->
+            <!-- ====== Help Us section====== -->
+            <section class="help_us_section margin_bottom_120">
+                <div class="container">
+                    <div class="contact_us padding_65 border_solid border_radius">
+                        <div class="row">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <img src="logo.png" class="img-fluid" alt="help_us_img">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sub_title text-start">
+                                    <h5 class="mb-3 mt-3">Join Us</h5>
+                                    <span class="gradient_line  justify-content-center">
+                                    </span>
+                                </div>
+                                <div class="">
+                                    <h4 class="text-start txt_gray fw_700 lh_normal" style="color: azure;">Join the Safe Degens community today and be a part of the future of blockchain technology. Experience the power of a utility wallet, Layer 1 blockchain, bridge, and staking, all in one revolutionary cryptocurrency.
+                                        Safe Degens Coin: Where innovation meets usability.</h4>
+                                </div>
+                                <br>
+                                <a href="https://t.me/safedegensportal" class="main_btn">
+                                    <button type="button" class="btn bg_gradient border-0">Telegram</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======End Help Us section====== -->
+            <!-- ====== Footer section====== -->
+            <footer class="footer_section">
+                <div class="container">
+                    <div class="footer_content border_bottom_color">
+                        <div class="row justify-content-between margin_bottom_120">
+                            <div class="col-md-3 col-6">
+                                <div class="footer_space mt-4 ms-0">
+                                    <div class="footer_logo">
+                                        <img src="image/logo.png" class="img-fluid" alt="logo">
+                                    </div>
+                                    <div class="footer_txt lh_22 mb-3">
+                                        <p class="">Revolutionizing the Crypto Ecosystem</p>
+                                        <h6 class="fs_16 fw_700">Love Our Social Media</h6>
+                                    </div>
+                                    <div class="social-media social_icon">
+                                        <a href="#" class="social-icon txt_blue border_solid border_radius me-2">
+                                            <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="social-icon txt_blue border_solid border_radius me-2">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="social-icon txt_blue border_solid border_radius me-2">
+                                            <i class="fab fa-google" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="social-icon txt_blue border_solid border_radius">
+                                            <i class="fab fa-github" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 d-flex justify-content-center">
+                                <div class="mb-3 mt-4">
+                                    <h4>Information</h4>
+                                    <div class="plan_list lh-lg d-flex fw_500 margin_left_10  margin_b_28">
+                                        <ul class="lh_34">
+                                            <li>
+                                                <a href="#about">How To Buy</a>
+                                            </li>
+                                            <li>
+                                                <a href="#utilities">Utilities</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tokenomics">Tokenomics</a>
+                                            </li>
+                                            <li>
+                                                <a href="#roadmap">Roadmap</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-3 col-6 d-flex justify-content-center ">
+                                <div class="mb-3 mt-4 ">
+                                    <h4>Quick Links</h4>
+                                    <div class="plan_list lh-lg d-flex fw_500 margin_left_10 margin_b_28 ">
+                                        <ul class="lh_34 ">
+                                            <li>
+                                                <a href="#">Bscscan</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dextools</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Pancakeswap</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Coinmarketcap</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 d-flex justify-content-center ">
+                                <div class="mb-3 mt-4 ">
+                                    <h4>Utilities</h4>
+                                    <div class="plan_list lh-lg d-flex fw_500 margin_left_10 margin_b_28 ">
+                                        <ul class="lh_34 ">
+                                            <li>
+                                                <a href="bridge">Bridge</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://wallet.">Wallet</a>
+                                            </li>
+                                            <li>
+                                                <a href="staking">Staking</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Terms & Condition</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="padding_40 ">
+                        <p class="txt_wheight text-center fs_16 ">dev@safedegens.com</p>
+                        <p class="txt_wheight text-center fs_16 ">© 2023. All rights reserved by Safe Degens</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- ======End Footer section====== -->
+            <a href="# " class="back-to-top">
+                <svg xmlns="http://www.w3.org/2000/svg " height="48 " viewBox="0 96 960 960 " width="48 ">
+                    <path d="M450 976V290L242 498l-42-42 280-280 280 280-42 42-208-208v686h-60Z "></path>
+                </svg>
+            </a>
+            </div>
+        </div>
+
+
+        <!-- Jquery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- bootstrap -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!--fontawesome js-->
+        <script src="kit.fontawesome.com/4fa83dc4e0.js" crossorigin="anonymous "></script>
+        <!-- slick -->
+        <script src="cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+        <script src="cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+        <script src="js/custom.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</body>
+
+
+</html>
